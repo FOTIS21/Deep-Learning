@@ -1,0 +1,36 @@
+
+1.
+Layer 1 (Flatten): Input size 150,528.
+
+Layer 2 (Dense): 512 units, sigmoid activation.
+
+Layer 3 (Dense): 256 units, sigmoid activation.
+
+Layer 4 (Output): 13 units, Softmax activation.
+CategoricalCrossentropy
+
+
+2. 
+Layer 1 (Flatten): Input size 150,528.
+
+Layer 2 (Dense): 256 units, ReLU activation.
+
+Layer 3 (Dense): 64 units (The Bottleneck), ReLU activation.
+
+Layer 4 (Output): 13 units, Softmax activation.
+Mse
+
+3. 
+Layer 1 (Flatten): Input size 150,528.
+
+Layer 2 (Dense): 1024 units, eLU activation.
+
+Layer 3 (Dense): 512 units, eLU activation.
+
+Layer 4 (Dense): 256 units, eLU activation.
+
+Layer 5 (Dense): 128 units, eLU activation.
+
+Layer 6 (Output): 13 units, Softmax activation.
+CategoricalCrossentropy
+also using batch size of 8
